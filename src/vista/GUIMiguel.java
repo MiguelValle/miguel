@@ -37,7 +37,8 @@ public class GUIMiguel extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblTitulo.setFont(new java.awt.Font("Typodermic", 0, 24)); // NOI18N
+        lblTitulo.setFont(new java.awt.Font("Century Schoolbook L", 0, 24)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(255, 102, 51));
         lblTitulo.setText("Miguel Valle");
 
         btnAgregar.setText("Agregar");
@@ -49,8 +50,11 @@ public class GUIMiguel extends javax.swing.JFrame {
             }
         });
 
+        lblNombre.setFont(new java.awt.Font("Droid Sans", 1, 18)); // NOI18N
+        lblNombre.setForeground(new java.awt.Color(51, 255, 51));
         lblNombre.setText("Nombre:");
 
+        lblCompartir.setForeground(new java.awt.Color(255, 0, 255));
         lblCompartir.setText("Compartir:");
 
         lblCompartido.setText("Kevin Suarez");
@@ -91,7 +95,7 @@ public class GUIMiguel extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNombre)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCompartir)
                     .addComponent(lblCompartido))
