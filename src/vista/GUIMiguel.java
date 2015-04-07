@@ -37,7 +37,7 @@ public class GUIMiguel extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblTitulo.setFont(new java.awt.Font("Typodermic", 0, 24)); // NOI18N
-        lblTitulo.setText("Miguel :D");
+        lblTitulo.setText("Miguel Valle");
 
         btnAgregar.setText("Agregar");
 
@@ -70,10 +70,10 @@ public class GUIMiguel extends javax.swing.JFrame {
                         .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblCompartir)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblNombre)
-                                .addGap(56, 56, 56)
-                                .addComponent(lblTitulo)))))
+                            .addComponent(lblNombre)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(88, 88, 88)
+                        .addComponent(lblTitulo)))
                 .addContainerGap(49, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
