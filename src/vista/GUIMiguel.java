@@ -33,6 +33,7 @@ public class GUIMiguel extends javax.swing.JFrame {
         lblNombre = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
         lblCompartir = new javax.swing.JLabel();
+        lblCompartido = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,9 +49,11 @@ public class GUIMiguel extends javax.swing.JFrame {
             }
         });
 
-        lblNombre.setText("Nombre");
+        lblNombre.setText("Nombre:");
 
-        lblCompartir.setText("Compartir");
+        lblCompartir.setText("Compartir:");
+
+        lblCompartido.setText("Kevin Suarez");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -69,7 +72,10 @@ public class GUIMiguel extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCompartir)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblCompartir)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lblCompartido))
                             .addComponent(lblNombre)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(88, 88, 88)
@@ -86,7 +92,9 @@ public class GUIMiguel extends javax.swing.JFrame {
                     .addComponent(lblNombre)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
-                .addComponent(lblCompartir)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCompartir)
+                    .addComponent(lblCompartido))
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAgregar)
@@ -139,6 +147,7 @@ public class GUIMiguel extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregar;
     private javax.swing.JButton btnSalir;
+    private javax.swing.JLabel lblCompartido;
     private javax.swing.JLabel lblCompartir;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblTitulo;
